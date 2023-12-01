@@ -1,0 +1,11 @@
+extension View {
+    func witchCustomButtonStyle(pressedScale: CGFloat) -> some View {
+        buttonStyle(CustomButtonStyle(pressedScale: pressedScale))
+    }
+}
+
+struct UsingCustomButtonStyleView: View {
+    var body: some View {
+        Button {
+            print("TAP")
+        } label: {
